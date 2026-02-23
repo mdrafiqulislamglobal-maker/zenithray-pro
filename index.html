@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zenith Ray | Elite Solar Energy Systems Ireland</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#FFD700', // Golden Yellow
+                        secondary: '#111111', // Matte Black
+                        accent: '#F5F5F5', // Ivory White
+                    },
+                    fontFamily: { sans: ['Space Grotesk', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { transition: background-color 0.4s ease, color 0.4s ease; }
+        .gold-glow { box-shadow: 0 0 50px -10px rgba(255, 215, 0, 0.3); }
+        .dark .gold-glow { box-shadow: 0 0 60px -15px rgba(255, 215, 0, 0.2); }
+    </style>
+</head>
+<body class="bg-white text-secondary dark:bg-[#080808] dark:text-accent font-sans">
+
+    <nav class="fixed w-full z-50 py-5 px-8 flex justify-between items-center bg-white/90 dark:bg-black/90 backdrop-blur-md border-b border-zinc-200 dark:border-zinc-800">
+        <div class="text-2xl font-bold tracking-widest text-secondary dark:text-primary">ZENITH RAY</div>
+        <div class="flex items-center gap-6">
+            <button onclick="document.documentElement.classList.toggle('dark')" class="p-2 rounded-lg bg-zinc-100 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700">🌓</button>
+            <a href="#contact" class="bg-secondary dark:bg-primary text-white dark:text-black px-6 py-2.5 rounded-full font-bold text-sm tracking-tighter hover:scale-105 transition">REQUEST ELITE ACCESS</a>
+        </div>
+    </nav>
+
+    <section class="min-h-screen flex items-center justify-center pt-24 px-6 relative overflow-hidden">
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-primary/20 blur-[120px] rounded-full"></div>
+        <div class="max-w-4xl text-center relative z-10">
+            <h1 class="text-6xl md:text-9xl font-bold leading-none mb-8 tracking-tighter">
+                Capturing The <span class="text-primary italic">Zenith</span> Of Energy.
+            </h1>
+            <p class="text-xl md:text-2xl opacity-80 mb-12 max-w-2xl mx-auto leading-relaxed">
+                <strong>Zenith Ray</strong> delivers sustainable energy independence architecture for Ireland's elite. Stop financing the grid and start owning the sun.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                <button class="bg-secondary dark:bg-primary text-white dark:text-black px-12 py-5 rounded-2xl font-bold text-xl gold-glow">SECURE MY ROI</button>
+                <button class="bg-transparent border-2 border-secondary dark:border-primary px-12 py-5 rounded-2xl font-bold text-xl">VIEW CASE STUDIES</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32 px-8 bg-zinc-50 dark:bg-zinc-900/30">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-20 items-center">
+            <div>
+                <h2 class="text-5xl font-bold mb-8 uppercase tracking-tighter">The Cost Of <span class="text-primary">Waiting</span></h2>
+                <p class="text-xl leading-relaxed opacity-70 mb-10">
+                    Energy prices in Ireland are not just rising; they are volatile. Every month you delay, your wealth evaporates into the grid. <strong>Zenith Ray</strong> stops the bleed.
+                </p>
+                <div class="space-y-4">
+                    <div class="flex items-center gap-4 text-red-500 font-bold"><span>✕</span> GRID DEPENDENCE: €200+ LOST MONTHLY</div>
+                    <div class="flex items-center gap-4 text-green-500 font-bold uppercase"><span>✓</span> ZENITH RAY: 98% SYSTEM EFFICIENCY</div>
+                </div>
+            </div>
+            <div class="p-12 bg-white dark:bg-secondary rounded-[3rem] gold-glow text-center border border-zinc-100 dark:border-zinc-800">
+                <div class="text-sm font-bold opacity-40 uppercase tracking-widest mb-4">Wealth Preservation</div>
+                <div class="text-7xl font-bold text-primary mb-2">€45,000</div>
+                <div class="text-lg opacity-60">Projected 20-Year Profit</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-32 px-8">
+        <h2 class="text-center text-4xl font-bold mb-20 uppercase tracking-widest">Premium Photovoltaic Engineering</h2>
+        <div class="grid lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
+            <div class="p-10 border dark:border-zinc-800 rounded-[2.5rem] opacity-40 grayscale hover:grayscale-0 transition">
+                <h3 class="text-2xl font-bold mb-4">Baseline Unit</h3>
+                <p class="mb-8 opacity-60">Standard efficiency panels with basic grid link.</p>
+                <div class="text-3xl font-bold">€6,200</div>
+            </div>
+            <div class="p-12 bg-secondary dark:bg-zinc-900 rounded-[3rem] text-white border-4 border-primary scale-110 shadow-2xl relative">
+                <div class="absolute -top-5 left-1/2 -translate-x-1/2 bg-primary text-black px-6 py-1 rounded-full text-xs font-bold uppercase">Best Solar ROI Ireland</div>
+                <h3 class="text-3xl font-bold mb-4 text-primary">ZENITH RAY ELITE</h3>
+                <p class="mb-10 opacity-80">High performance green technology with advanced lithium storage.</p>
+                <div class="text-5xl font-bold">€9,800</div>
+                <p class="text-xs mt-4 italic opacity-50 uppercase tracking-tighter">*Fully SEAI Grant Eligible</p>
+                <button class="w-full bg-primary text-black mt-10 py-5 rounded-2xl font-bold text-lg">CLAIM THIS SYSTEM</button>
+            </div>
+            <div class="p-10 border dark:border-zinc-800 rounded-[2.5rem] opacity-40 grayscale hover:grayscale-0 transition">
+                <h3 class="text-2xl font-bold mb-4">Enterprise Ray</h3>
+                <p class="mb-8 opacity-60">Commercial scale solar farms for industry.</p>
+                <div class="text-3xl font-bold">€30,000+</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 px-8 bg-primary text-black text-center mx-4 rounded-[3rem]">
+        <h2 class="text-6xl font-bold mb-6 tracking-tighter">FINAL 3 SLOTS REMAINING.</h2>
+        <p class="text-xl font-bold opacity-80 uppercase tracking-widest mb-10 text-center">Reliable Solar Panel Experts - Secure Your Future Wealth Today!</p>
+        <button class="bg-black text-white px-12 py-5 rounded-2xl font-bold text-xl hover:scale-105 transition shadow-2xl">BOOK MY INSTALLATION</button>
+    </section>
+
+    <footer class="py-20 px-8 bg-white dark:bg-black border-t border-zinc-100 dark:border-zinc-900 text-center">
+        <div class="text-3xl font-bold text-secondary dark:text-primary mb-6 tracking-widest uppercase">ZENITH RAY</div>
+        <p class="text-zinc-500 max-w-xl mx-auto mb-12 text-sm font-bold uppercase tracking-tighter">Elite Solar Savings Guide | Top Rated Energy Solutions Ireland</p>
+        <div class="pt-10 border-t border-zinc-100 dark:border-zinc-900">
+            <p class="text-lg font-bold">Designed & Developed by <span class="text-primary underline">Md Rafiqul Islam</span></p>
+            <p class="text-xs text-zinc-400 mt-4 uppercase tracking-[0.3em]">© 2026-27 | Global Wealth Assets</p>
+        </div>
+    </footer>
+
+</body>
+</html>
