@@ -13,60 +13,61 @@
                 extend: {
                     colors: {
                         primary: '#FFD700', // Golden Yellow
-                        secondary: '#080808', // Deep Black
-                        accent: '#E5E7EB', // Metallic Silver
-                    },
-                    fontFamily: { sans: ['Space Grotesk', 'sans-serif'] }
+                        secondary: '#0A0A0A', // Pure Black
+                        accent: '#FFFFFF', // Pure White for text
+                    }
                 }
             }
         }
     </script>
     <style>
-        body { background-color: #080808; color: #E5E7EB; }
-        .gold-glow { box-shadow: 0 0 60px -15px rgba(255, 215, 0, 0.2); }
-        .text-gradient { background: linear-gradient(to right, #FFD700, #FFFACD); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        body { background-color: #0A0A0A; color: #FFFFFF; font-family: 'Space Grotesk', sans-serif; }
+        .pricing-card { background: #121212; border: 1px solid #1F1F1F; }
+        .pricing-card-featured { background: #181818; border: 2px solid #FFD700; }
+        .gold-text { color: #FFD700; }
+        .gold-glow { box-shadow: 0 0 40px -10px rgba(255, 215, 0, 0.3); }
     </style>
 </head>
-<body class="font-sans">
+<body class="antialiased">
 
-    <nav class="fixed w-full z-50 py-5 px-8 flex justify-between items-center bg-black/80 backdrop-blur-xl border-b border-zinc-900">
-        <div class="text-2xl font-bold tracking-widest text-primary">ZENITH RAY</div>
-        <div class="flex items-center gap-6">
-            <span class="text-[10px] font-black uppercase tracking-[0.3em] text-zinc-500">Pure Dark Edition</span>
-            <a href="#contact" class="bg-primary text-black px-8 py-2.5 rounded-full font-bold text-sm tracking-tighter hover:scale-105 transition">GET ELITE QUOTE</a>
+    <nav class="fixed w-full z-50 py-5 px-8 flex justify-between items-center bg-black/90 backdrop-blur-xl border-b border-zinc-800">
+        <div class="text-2xl font-bold tracking-widest gold-text">ZENITH RAY</div>
+        <div class="flex items-center gap-4">
+            <span class="text-[10px] font-black uppercase tracking-[0.3em] text-zinc-500">Pure Dark Elite</span>
+            <a href="#contact" class="bg-primary text-black px-8 py-2.5 rounded-full font-bold text-sm tracking-tighter hover:bg-white transition-all">GET ELITE QUOTE</a>
         </div>
     </nav>
 
     <section class="min-h-screen flex items-center justify-center pt-24 px-6 relative overflow-hidden">
         <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/10 blur-[150px] rounded-full"></div>
         <div class="max-w-5xl text-center relative z-10">
-            <h1 class="text-6xl md:text-9xl font-bold leading-none mb-8 tracking-tighter text-white">
-                Capturing The <span class="text-gradient italic">Zenith</span> Of Power.
+            <h1 class="text-6xl md:text-9xl font-bold leading-none mb-8 tracking-tighter text-white uppercase">
+                Own The <span class="gold-text italic">Zenith</span> of Power.
             </h1>
             <p class="text-xl md:text-2xl text-zinc-400 mb-12 max-w-2xl mx-auto leading-relaxed">
-                <strong>Zenith Ray</strong> delivers sustainable energy independence architecture for Ireland's elite. Stop financing the grid and start owning the sun.
+                <strong>Zenith Ray</strong> delivers high-efficiency solar infrastructure for Ireland's elite. Stop donating wealth to the grid.
             </p>
             <div class="flex flex-col sm:flex-row gap-6 justify-center">
-                <button class="bg-primary text-black px-12 py-5 rounded-2xl font-black text-xl gold-glow hover:bg-white transition-all">SECURE MY ROI</button>
+                <button class="bg-primary text-black px-12 py-5 rounded-2xl font-black text-xl gold-glow hover:scale-105 transition">SECURE MY ROI</button>
                 <button class="bg-transparent border-2 border-primary text-primary px-12 py-5 rounded-2xl font-bold text-xl hover:bg-primary/5 transition">VIEW PERFORMANCE</button>
             </div>
         </div>
     </section>
 
-    <section class="py-32 px-8 bg-zinc-950/50">
+    <section class="py-32 px-8 bg-zinc-900/30">
         <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20 items-center">
             <div>
-                <h2 class="text-5xl font-bold mb-8 uppercase tracking-tighter text-white">The Cost Of <span class="text-primary">Waiting</span></h2>
+                <h2 class="text-5xl font-bold mb-8 uppercase tracking-tighter text-white">The Cost Of <span class="gold-text">Waiting</span></h2>
                 <p class="text-xl leading-relaxed text-zinc-400 mb-10">
-                    Energy prices in Ireland are not just rising; they are volatile. Every month you delay, your wealth evaporates into the grid. <strong>Zenith Ray</strong> stops the bleed.
+                    Energy prices in Ireland are volatile. Every second without <strong>Zenith Ray</strong>, your hard-earned wealth evaporates into the grid.
                 </p>
                 <div class="space-y-4">
                     <div class="flex items-center gap-4 text-red-500 font-bold uppercase tracking-widest">✕ GRID DEPENDENCE: €200+ LOST MONTHLY</div>
                     <div class="flex items-center gap-4 text-green-500 font-bold uppercase tracking-widest">✓ ZENITH RAY: 98% SYSTEM EFFICIENCY</div>
                 </div>
             </div>
-            <div class="p-16 bg-zinc-900 rounded-[3rem] gold-glow text-center border border-zinc-800">
-                <div class="text-sm font-bold opacity-40 uppercase tracking-[0.4em] mb-4 text-primary">Wealth Preservation</div>
+            <div class="p-16 pricing-card rounded-[3rem] gold-glow text-center">
+                <div class="text-sm font-bold opacity-40 uppercase tracking-[0.4em] mb-4 gold-text">Wealth Preservation</div>
                 <div class="text-8xl font-black text-white mb-2 tracking-tighter">€45,000</div>
                 <div class="text-lg opacity-60 uppercase tracking-widest text-zinc-400">Projected 20-Year Profit</div>
             </div>
@@ -74,60 +75,63 @@
     </section>
 
     <section class="py-32 px-8">
-        <h2 class="text-center text-4xl font-bold mb-20 uppercase tracking-widest text-white">Elite Solar Savings Guide</h2>
+        <h2 class="text-center text-4xl font-bold mb-20 uppercase tracking-widest text-white">Premium Photovoltaic Engineering</h2>
         <div class="grid lg:grid-cols-3 gap-10 max-w-7xl mx-auto items-center">
-            <div class="p-10 border border-zinc-800 rounded-[2.5rem] opacity-30 grayscale transition">
-                <h3 class="text-2xl font-bold mb-4">Baseline Unit</h3>
-                <p class="mb-8 text-zinc-500">Standard efficiency panels with basic grid link.</p>
-                <div class="text-3xl font-bold">€6,200</div>
+            <div class="p-10 pricing-card rounded-[2.5rem] opacity-40 grayscale transition hover:opacity-100 hover:grayscale-0">
+                <h3 class="text-2xl font-bold mb-4 text-white">Baseline Unit</h3>
+                <p class="mb-8 text-zinc-400">Standard efficiency panels with basic grid link. Minimum savings.</p>
+                <div class="text-3xl font-bold text-white">€6,200</div>
             </div>
-            <div class="p-14 bg-zinc-900 rounded-[3.5rem] text-white border-4 border-primary scale-110 shadow-2xl relative">
-                <div class="absolute -top-5 left-1/2 -translate-x-1/2 bg-primary text-black px-8 py-1 rounded-full text-xs font-black uppercase">Most Requested</div>
-                <h3 class="text-3xl font-black mb-4 text-primary uppercase">ZENITH RAY ELITE</h3>
-                <p class="mb-10 text-zinc-300 leading-relaxed">High performance green technology with advanced lithium storage.</p>
-                <div class="text-6xl font-black mb-10">€9,800</div>
-                <button class="w-full bg-primary text-black py-5 rounded-2xl font-black text-xl hover:bg-white transition">INSTALL THIS SYSTEM</button>
+            
+            <div class="p-14 pricing-card-featured rounded-[3.5rem] text-white scale-110 shadow-2xl relative">
+                <div class="absolute -top-5 left-1/2 -translate-x-1/2 bg-primary text-black px-8 py-1 rounded-full text-xs font-black uppercase tracking-widest shadow-lg">Most Requested</div>
+                <h3 class="text-3xl font-black mb-4 gold-text uppercase">ZENITH RAY ELITE</h3>
+                <p class="mb-10 text-zinc-300 leading-relaxed font-semibold">High performance green technology with advanced lithium storage and AI monitoring.</p>
+                <div class="text-6xl font-black mb-10 text-white">€9,800</div>
+                <button class="w-full bg-primary text-black py-5 rounded-2xl font-black text-xl hover:bg-white transition-all">INSTALL THIS SYSTEM</button>
+                <p class="text-[10px] mt-4 text-center text-zinc-500 uppercase font-black">Fully SEAI Grant Eligible</p>
             </div>
-            <div class="p-10 border border-zinc-800 rounded-[2.5rem] opacity-30 grayscale transition">
-                <h3 class="text-2xl font-bold mb-4">Enterprise Ray</h3>
-                <p class="text-zinc-500 mb-8">Industrial scale solar farms for industry.</p>
-                <div class="text-3xl font-bold">€30,000+</div>
+            
+            <div class="p-10 pricing-card rounded-[2.5rem] opacity-40 grayscale transition hover:opacity-100 hover:grayscale-0">
+                <h3 class="text-2xl font-bold mb-4 text-white">Enterprise Ray</h3>
+                <p class="text-zinc-400 mb-8">Industrial scale solar farms for large business operations.</p>
+                <div class="text-3xl font-bold text-white">€30,000+</div>
             </div>
         </div>
     </section>
 
-    <section class="py-32 px-8 bg-zinc-900/50 rounded-[4rem] mx-4 border border-zinc-800">
+    <section class="py-32 px-8 pricing-card rounded-[4rem] mx-4">
         <div class="max-w-4xl mx-auto text-center">
-            <h2 class="text-3xl font-black mb-16 uppercase text-primary tracking-widest">Zenith Ray vs Cheap Alternatives</h2>
+            <h2 class="text-3xl font-black mb-16 uppercase gold-text tracking-widest">Zenith Ray vs Others</h2>
             <div class="space-y-6 text-left">
-                <div class="grid grid-cols-2 pb-6 border-b border-zinc-800">
-                    <div class="opacity-50 italic">Generic Installers</div>
-                    <div class="text-primary font-bold">Zenith Ray Elite Grade</div>
+                <div class="grid grid-cols-2 pb-6 border-b border-zinc-800 text-zinc-500 font-bold uppercase text-xs tracking-widest">
+                    <div>Generic Installers</div>
+                    <div class="gold-text">Zenith Ray Elite</div>
                 </div>
-                <div class="grid grid-cols-2 pb-6 border-b border-zinc-800">
-                    <div class="opacity-80 font-bold uppercase">10 Year Warranty</div>
-                    <div class="text-primary font-black uppercase">Lifetime Cell Protection</div>
+                <div class="grid grid-cols-2 py-6 border-b border-zinc-800">
+                    <div class="text-zinc-400 font-bold uppercase text-sm">10 Year Warranty</div>
+                    <div class="gold-text font-black uppercase text-sm italic underline">Lifetime Protection</div>
                 </div>
-                <div class="grid grid-cols-2 pb-6">
-                    <div class="opacity-80 font-bold uppercase">Standard Inverters</div>
-                    <div class="text-primary font-black uppercase">Liquid Cooled AI Inverters</div>
+                <div class="grid grid-cols-2 py-6 border-b border-zinc-800">
+                    <div class="text-zinc-400 font-bold uppercase text-sm">Standard Inverters</div>
+                    <div class="gold-text font-black uppercase text-sm italic underline">AI-Driven Monitoring</div>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="py-24 px-8 bg-primary text-black text-center mt-32">
-        <h2 class="text-5xl md:text-7xl font-black mb-6 tracking-tighter">FINAL 3 SLOTS REMAINING.</h2>
-        <p class="text-xl font-bold opacity-80 uppercase tracking-[0.3em] mb-12">Reliable Solar Panel Experts - Q1 Booking Closing Soon.</p>
-        <button class="bg-black text-white px-16 py-6 rounded-3xl font-black text-2xl hover:scale-105 transition shadow-2xl uppercase">Secure My Slot Now</button>
+        <h2 class="text-5xl md:text-7xl font-black mb-6 tracking-tighter">ONLY 3 SLOTS LEFT.</h2>
+        <p class="text-xl font-bold opacity-80 uppercase tracking-[0.3em] mb-12">Q1 Booking is closing. Secure your future wealth now!</p>
+        <button class="bg-black text-white px-16 py-6 rounded-3xl font-black text-2xl hover:scale-105 transition shadow-2xl uppercase">Secure My Slot</button>
     </section>
 
     <footer class="py-20 px-8 bg-black border-t border-zinc-900 text-center">
-        <div class="text-3xl font-bold text-primary mb-6 tracking-widest uppercase italic">ZENITH RAY</div>
-        <p class="text-zinc-500 max-w-xl mx-auto mb-16 text-xs font-black uppercase tracking-[0.3em]">Advanced Solar Power Systems | Premium Photovoltaic Engineering Ireland</p>
+        <div class="text-3xl font-bold gold-text mb-6 tracking-widest uppercase italic leading-none">ZENITH RAY</div>
+        <p class="text-zinc-500 max-w-xl mx-auto mb-16 text-[10px] font-black uppercase tracking-[0.4em]">Advanced Solar Power Systems | Premium Photovoltaic Engineering Ireland</p>
         <div class="pt-12 border-t border-zinc-900">
-            <p class="text-xl font-bold text-white">Designed & Developed by <span class="text-primary underline decoration-2 underline-offset-8">Md Rafiqul Islam</span></p>
-            <p class="text-zinc-600 mt-6 text-xs font-black tracking-[0.4em] uppercase">© 2026-27 | Global Energy Assets</p>
+            <p class="text-xl font-bold text-white">Designed & Developed by <span class="gold-text underline decoration-2 underline-offset-8">Md Rafiqul Islam</span></p>
+            <p class="text-zinc-600 mt-6 text-[10px] font-black tracking-[0.4em] uppercase">© 2026-27 | Global Energy Assets</p>
         </div>
     </footer>
 
